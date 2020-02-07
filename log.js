@@ -30,6 +30,7 @@
 		console.log(
 			`这是你自 ${access} 以来第 ${i} 次在本站打开控制台，你想知道什么秘密嘛~`
 		)
-		console.log('%c ',`background:url(https://cdn.jsdelivr.net/gh/Tomotoes/images/console/${i % 5}.jpg)) no-repeat center;background-size:200px;margin:5px 0;padding:0 0 162px 200px;border-radius:10px;overflow:hidden;`)
+		const img = `https://cdn.jsdelivr.net/gh/Tomotoes/images/console/${i % 5}.jpg`
+		console.log('%c ', '\n  background:url('.concat(img, ') no-repeat center;\n  background-size:200px;\n  margin:5px 0;\n  padding:0 0 162px 200px;\n  border-radius:10px;\n  overflow:hidden;\n  '))
 	}
 })()
